@@ -1,14 +1,15 @@
 // Make connection
+onst ec2_URL = "http://3.212.251.206:4000";
 function getBuzzId() {
     small = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
     capital = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-    buzzId = Math.ceil(Math.random() * 10000) + small[Math.floor(Math.random())*26] + capital[Math.floor(Math.random())*26];
+    buzzId = Math.ceil(Math.random() * 10000) + small[Math.floor(Math.random()*25)] + capital[Math.floor(Math.random()*25)];
     alert(`Your Buzz-Id is ${buzzId}`);
     console.log(`Your Buzz-Id is ${buzzId}`);
     
     return buzzId;
 }
-var socket = io.connect('http://localhost:4000', {
+var socket = io.connect(ec2_URL, {
     query: { buzzId: getBuzzId() }
 });
 
