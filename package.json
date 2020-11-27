@@ -1,0 +1,23 @@
+{
+  "name": "socket.client",
+  "version": "1.0.0",
+  "description": "You can use the [editor on GitHub](https://github.com/anoop-dev0/socket.client/edit/main/README.md) to maintain and preview the content for your website in Markdown files.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anoop-dev0/socket.client.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anoop-dev0/socket.client/issues"
+  },
+  "homepage": "https://github.com/anoop-dev0/socket.client#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
