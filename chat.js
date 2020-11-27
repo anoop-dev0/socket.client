@@ -1,6 +1,6 @@
 // Make connection
-//const ec2_URL = "http://3.212.251.206:4000";
-const ec2_URL = "http://localhost:4000";
+const ec2_URL = "http://3.212.251.206:4000";
+//const ec2_URL = "http://localhost:4000";
 let showChat = true;
 function getBuzzId() {
     small = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
