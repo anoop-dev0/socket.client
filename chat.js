@@ -1,6 +1,6 @@
 
-const ec2_URL = "http://3.139.194.131:4000/";
-//const ec2_URL = "http://localhost:4000";
+//const ec2_URL = "http://3.139.194.131:4000/";
+const ec2_URL = "http://localhost:4000";
 let showChat = true;
 
 function getBuzzId() {
@@ -97,5 +97,8 @@ socket.on('offline', function (data) {
     alert(`${data.senderName} is offline now`);
 });
 socket.on('unauthorized', function(data){
+    alert(data);
+})
+socket.on('error', function(data){
     alert(data);
 })
